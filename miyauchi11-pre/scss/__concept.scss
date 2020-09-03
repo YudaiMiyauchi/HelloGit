@@ -1,0 +1,60 @@
+.concept {
+  background: linear-gradient(#a193861f 0% 42%, #a1938689 42% 100%);
+}
+
+.img {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-left {
+  width: 63%;
+  background-image: url(../img/left.png);
+  background-size: cover;
+  background-position: 100% 100%;
+  @include sp {
+    width: 49%;
+  }
+}
+
+.img-right {
+  width: 35%;
+  background-image: url(../img/right.png);
+  background-size: cover;
+  background-position: 100% 100%;
+  @include sp {
+    width: 49%;
+  }
+}
+
+.text {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 65px;
+  @include sp {
+    flex-direction: column;
+    padding: 60px 20px;
+    line-height: 23px;
+  }
+}
+
+.text-a {
+  width: 41%;
+  font-size: 40px;
+  font-family: Hiragino Mincho Pro;
+  @include sp {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+}
+
+.text-b {
+  width: 39%;
+  font-size: 16px;
+  font-family: Hiragino Kaku Pro;
+}

@@ -1,0 +1,76 @@
+.menu-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  @include sp {
+    flex-direction: column;
+    height: 320vh;
+  }
+}
+
+.menu-box {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  @include sp {
+    height: 90vh;
+  }
+}
+
+.img-cut {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../img/cut.png);
+  background-size: cover;
+  @include sp {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+.img-perm {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../img/perm.png);
+  background-size: cover;
+  @include sp {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+.img-make {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../img/make.png);
+  background-size: cover;
+  @include sp {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+.menu-text {
+  padding: 0 10px 13px;
+  line-height: 20px;
+}
+
+.menu-a {
+  font-size: 30px;
+  font-family: Roboto Mono for Powerline;
+  margin: 30px 0;
+}
+
+.menu-b {
+  font-size: 16px;
+  font-family: Roboto Mono for Powerline;
+  margin-bottom: 30px;
+}
+
+.price {
+  position: absolute;
+  right: 0;
+  @include sp {
+    margin-bottom: 50px;
+  }
+}

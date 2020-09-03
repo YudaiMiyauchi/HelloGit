@@ -1,0 +1,59 @@
+///////////////////////
+/////// mixin/////////
+/////////////////////
+
+@mixin pc {
+  @media (min-width: 961px) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: 650px) {
+    @content;
+  }
+}
+
+///////////////////////
+/////////共通//////////
+/////////////////////
+
+body {
+  @include sp {
+    width: 650px;
+  }
+}
+
+.inner {
+  width: 84%;
+  margin: 0 auto;
+  padding: 256px 0 60px;
+  @include tab {
+    padding: 90px 0 60px;
+  }
+}
+
+.title {
+  font-size: 24px;
+  color: #707070;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  &:after {
+    content: "";
+    display: inline-block;
+    border: 1px solid #707070;
+    width: 99px;
+    height: 1px;
+    margin-left: 10px;
+  }
+  @include tab {
+    margin-bottom: 60px;
+  }
+}

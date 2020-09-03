@@ -1,0 +1,41 @@
+footer {
+  height: 342px;
+}
+
+.line {
+  width: 100%;
+  height: 50%;
+  border: 1px solid #7070704d;
+}
+
+.f-wrap {
+  margin-top: 248px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include sp {
+    flex-direction: column-reverse;
+    height: 117px;
+  }
+}
+
+.salon {
+  display: flex;
+}
+
+.button {
+  border: 1px solid #707070;
+  padding: 10px 41px 9px;
+  a {
+    font-size: 18px;
+    color: #707070;
+  }
+  @include sp {
+    margin-bottom: 100px;
+  }
+}
+
+.tw {
+  margin-left: 24px;
+  margin-right: 9px;
+}

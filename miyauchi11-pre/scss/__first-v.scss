@@ -1,0 +1,53 @@
+.first-v {
+  display: flex;
+  @include sp {
+    display: flex;
+  }
+}
+
+.v-left {
+  width: 46%;
+  height: 100vh;
+  position: relative;
+  @include sp {
+    width: 170%;
+    position: absolute;
+    color: white;
+  }
+}
+
+.hair {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 38px;
+  width: 100%;
+  height: 28%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  @include sp {
+    flex-direction: column-reverse;
+    height: 14%;
+  }
+
+  .hair-a {
+    font-family: Hiragino Mincho Pro;
+  }
+  .hair-b {
+    font-family: Zapfino;
+    white-space: nowrap;
+  }
+}
+
+.v-right {
+  width: 54%;
+  height: 100vh;
+  background-image: url(../img/woman.png);
+  background-size: cover;
+  @include sp {
+    width: 100%;
+  }
+}
